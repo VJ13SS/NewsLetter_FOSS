@@ -1,0 +1,85 @@
+.app{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-inline: 15px;
+}
+
+.app .newsletter{
+    height: 60vh;
+    border: 1px solid black;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    border-radius: 15px;
+    padding: 15px;
+    
+}
+.app .newsletter span{
+    color: blue;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.app .newsletter p{
+    color: rgb(69, 66, 66);
+    font-weight: 500;
+}
+
+.app .newsletter form{
+    box-shadow: 5px 5px 10px rgba(0,0,0,0.3);
+    width: 100%;
+    margin-top: 30px;
+    height: 90px;
+    display: flex;
+    gap: 5px;
+    align-items: center;
+    justify-content: center;
+    border-top: 1px solid gray;
+    border-left: 1px solid gray;
+    border-radius: 5px;
+}
+
+.app .newsletter form input{
+    width: 65%;
+    border: none;
+    border-bottom: 1px solid gray;
+    height: 40px;
+    padding-left: 5px;
+    outline: none;
+}
+
+.app .newsletter form button{
+    height: 35px;
+    width: 90px;
+    color: white;
+    background-color: blue;
+    border: none;
+    border-radius: 5px;
+    font-weight: 500;
+}
+
+@media (min-width:1200px){
+    .app .newsletter{
+        width: 60%;
+    }
+    .app .newsletter p{
+        max-width: 80%;
+    }
+}
+
+@media (max-width:375px){
+    .app .newsletter form{
+        flex-direction: column;
+        height: 120px;
+        gap: 10px;
+    }
+    .app .newsletter form button{
+        height: 30px;
+    }
+}
