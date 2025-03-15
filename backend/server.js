@@ -83,13 +83,13 @@ const sentEmail = async (receiver) => {
   let transporter = nodemailer.createTransport({
     service: "gmail", // You can replace this with another service (e.g., 'outlook', 'yahoo', etc.)
     auth: {
-      user: "kavungalvinesh@gmail.com", // Your email address
-      pass: "juhcwdkvudxnjszl", // Your email password or app password (for Gmail with 2FA enabled)
+      user: "simhathinevtlvalathunnanjn@gmail.com", // Your email address
+      pass: "jmxgtosodlljnqyg", // Your email password or app password (for Gmail with 2FA enabled)
     },
   });
 
   let mailOptions = {
-    from: "kavungalvinesh@gmail.com", // Sender's address
+    from: "simhathinevtlvalathunnanjn@gmail.com", // Sender's address
     to: receiver, // Receiver's address
     subject: "Weekly Newsletter: Internships, Scholarships, and Hackathons", // Subject line
     text: "Please check the HTML content for updates on internships, scholarships, and hackathons.", // Plain text body
