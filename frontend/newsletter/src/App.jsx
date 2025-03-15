@@ -41,7 +41,7 @@ export default function App() {
     e.preventDefault();  // Fix: Pass the event object
 
     setIsSubmitting(true);
-    const url = 'http://localhost:3000/sent-mail';
+    const url = 'https://news-letter-foss-backend.vercel.app/sent-mail';
 
     try {
       const response = await fetch(url, {
